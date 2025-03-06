@@ -1,0 +1,51 @@
+\documentclass[a4paper, 12pt]{article}
+\title{This is my work in R}
+\author{ MyFirstName MyLastName\\OrganizationName\\
+         City, ZipCope, \underline{Country}\\
+        \url{username@the.rest}}
+\date{\today}  %% manually: \date{March 6, 2025} 
+\usepackage[natbibapa]{apacite} %% for bibliography
+\usepackage{rotating, graphicx} %% for rotating tables
+\usepackage{adjustbox} % size of plots and tables
+\usepackage{chngcntr}% section numbering
+\counterwithin{table}{section}\counterwithin{figure}{section}
+\usepackage{Sweave}
+\begin{document} % every "begin: needs and "end"
+\input{WorkInR_forPrinter-concordance}
+\maketitle 
+\begin{abstract}
+This is an example of an abstract in a paper. This is an example of an abstract in a paper. This is an example of an abstract in a paper. This is an example of an abstract in a paper.This is an example of an abstract in a paper.This is an example of an abstract in a paper.
+\end{abstract}
+
+
+\section*{Introduction} % * to unnumber
+
+This is just my intro to my nice paper. This is just my intro to my nice paper.This is just my intro to my nice paper. This is just my intro to my nice paper.This is just my intro to my nice paper. This is just my intro to my nice paper.This is just my intro to my nice paper. This is just my intro to my nice paper.This is just my intro to my nice paper. This is just my intro to my nice paper.This is just my intro to my nice paper. This is just my intro to my nice paper.
+
+This is just my intro to my nice paper. This is just my intro to my nice paper.This is just my intro to my nice paper. This is just my intro to my nice paper.This is just my intro to my nice paper. This is just my intro to my nice paper.This is just my intro to my nice paper. This is just my intro to my nice paper.
+
+
+\section{Exploring Tables}\label{explo-tables} % label for crossref
+
+%footnote coming
+Another section. I will use a footnot now \footnote{This is a footnote.}. I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref. I will soon use cross-ref. I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref.I will soon use cross-ref. I will soon use cross-ref. I will soon use cross-ref.
+%cross-ref coming
+
+%cross-ref coming
+I will soon use cross-ref.I will soon use cross-ref: as we see in Section \ref{catexplor}.
+
+% a chunk hidden (echo=FALSE) with some setup
+% chunk has its own name 
+
+
+\subsection{Exploring Categorical Data}\label{catexplor}
+
+Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.
+
+I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.Here, I continue doing this nice work, I hope you like it and read it. It has been a very hard work.
+
+You can see the statistics of a categorical variable in Table \ref{catexploreTable}.
+
+%the chunk name is NOT used in cross-ref for table.
+%Table is created and displayed.
+
